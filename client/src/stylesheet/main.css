@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfdfd;
+}
+
+.container {
+    background: #ececec;
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 450px;
+}
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#header-title {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    color: #989898;
+    font-weight: 700;
+    font-size: 1.6em;
+    grid-area: 1/2;
+}
+
+.header-btn {
+    text-align: center;
+    border-style: none;
+    width: 100%;
+    max-height: 70%;    
+    fill: #aaa;
+}
+
+.header-menu-btn {
+    text-align: center;
+    border-style: none;
+    width: 100%;
+    fill: #aaa;
+    max-height: 50%;
+}
+
+.header-menu-btn:hover{
+    fill: #6e6e6e;
+}
+
+.header-btn:hover{
+    fill: #6e6e6e;
+}
+
+
+
+
+
+
+
+
+
+
+
+.item-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 85% 15%;
+    grid-template-columns: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.items-container {
+    list-style: none;
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.items-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.items-container::-webkit-scrollbar-thumb {
+    background: #989898;
+}
+
+.items {
+    margin-bottom: 5%;
+    width: 80%;
+    background-color: #fefefe;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 4% 2% !important;
+    display: flex;
+    justify-content: space-between;
+    color: #585858;
+}
+
+.items:hover{
+    background-color:#fcfbfb;
+}
+
+.empty-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addItem-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addItem-mordal {
+    position: absolute;
+    top: 30%;
+    padding: 0 4%;
+    padding-top: 4%;
+    background-color: #fefefe;
+    height: 30%;
+    width: 70%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 22px #656565;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.addItem-mordal div {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.addItem-input {
+    border: none;
+    border-bottom: 2px solid #989898;
+    height: 40px;
+    background: #fefefe;
+    color: #989898;
+}
+
+.addItem-input:focus {
+    outline: none !important;
+    border-bottom: 2px solid black;
+}
+
+.addItem-btn {
+    border: none;
+    background-color: #fefefe;
+    color: #989898;
+}
+
+.addItem-btn:hover {
+    color: #161616;
+    transform: scale(1.01);
+}
+
+.addItem-addbtn {
+    border-style: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: #989898;
+    color: #dbdbdb;
+    fill: #aaa;
+}
+
+#list-container {
+    width: 100%;
+    height: 100%;
+}
+
+.bin-st1 {
+    fill: #aaa;
+    height: 37px;
+}
+
+.bin-st1:hover {
+    fill: #6e6e6e;
+}
+
+.menuList-container{
+    display: flex;
+    position: absolute;
+    height: 60%;
+    width: 70%;
+    left: 15%;
+    top: 10%;
+    background-color: white;    
+    box-shadow: 0px 0px 22px #656565;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 3%;
+}
+.menuList-btn-container{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.menuList-close-btn{
+    max-height: 50%;    
+    background-color: #fefefe;
+    color: #989898;    
+    fill: #aaa;
+}
+.menuList-close-btn:hover{
+    fill: #6e6e6e;
+}
+
+.menuList-btn{
+    max-height: 50%;
+    width: 90%;
+    margin: 3% 0;
+    padding: 2% 0;
+    border: 2px solid #989898;
+    border-radius: 8px;    
+    background-color: #fefefe;
+    color: #989898;
+}
+
+.menuList-btn:hover{
+    color: #161616;
+}
+

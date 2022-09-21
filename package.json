@@ -1,0 +1,21 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "a simple to do app",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"nodemon .\" \"cd client && npm start\""
+  },
+  "author": "Norman Chifenga",
+  "license": "ISC",
+  "dependencies": {
+    "concurrent": "^0.3.2",
+    "concurrently": "^7.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "font-awesome": "^4.7.0",
+    "mongoose": "^6.5.4",
+    "nodemon": "^2.0.19"
+  }
+}
