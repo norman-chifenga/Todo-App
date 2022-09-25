@@ -7,8 +7,7 @@ A simple Todo App using React.js and Node.js
 ### PREREQUISITE
 Install Node.js
 
-Install MongoDB with default Setting
-url
+Install MongoDB with default URL Setting
 
 ### INSTRUCTIONS
 Clone this repository.
@@ -17,7 +16,7 @@ Clone this repository.
 https://github.com/norman-chifenga/Todo-App
 ```
 
-Config dotenv file, replace the database url
+Config dotenv file, replace the database URL
 ```
 DATABASE_URL = "mongodb://127.0.0.1:27017/todoApp"
 ```
