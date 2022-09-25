@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express();
+require('dotenv').config();
 const path = require("path");
 const routerList = require(path.resolve(__dirname, "./routes/routeList"));
 const routeTask =  require(path.resolve(__dirname,"./routes/routeTasks"))
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 5000;
-const url = "mongodb://127.0.0.1:27017/norman";
+const url = process.env.DATABASE_URL
 const mongoose = require("mongoose");
 const cors = require("cors")
 

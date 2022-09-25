@@ -9,5 +9,3 @@ const taskSchema = new schema({
 
 const task = mongoose.model("task",taskSchema)
 module.exports = task
-
-
